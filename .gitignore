@@ -1,0 +1,10 @@
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+.idea/
+.DS_Store
+/tests/report
+public/uploads/
+storage/
+checklist/*
