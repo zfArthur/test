@@ -4,10 +4,24 @@ namespace  IMooc;
 
 class Database{
 
+protected  $db;
+private function __construct(){
 
-public  function  test(){
 
-    echo 3332;
+
+}
+
+public  static function getInstance(){
+
+    if(self::$db){
+        return self::$db;
+    }else{
+
+        self::$db = new self();
+
+        return self::$db;
+    }
+
 }
 
 }

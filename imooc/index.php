@@ -40,6 +40,13 @@ $obj= new IMooc\Object();
 
 $db = new \IMooc\Factory();
 var_dump($db);
-//$db->test();
+
+
+
+//$db=  \IMooc\Database::getInstance();
+
+//var_dump($db);
+//$db1=  \IMooc\Database::getInstance();
+//$db2=  \IMooc\Database::getInstance();
 
 
