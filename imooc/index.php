@@ -34,5 +34,12 @@ $obj= new IMooc\Object();
 
 
 //invoke
-echo $obj('kkkk');
+//echo $obj('kkkk');
+
+
+
+$db = new \IMooc\Factory();
+var_dump($db);
+//$db->test();
+
 
