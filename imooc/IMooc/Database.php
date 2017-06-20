@@ -1,27 +1,42 @@
 <?php
+namespace IMooc;
 
-namespace  IMooc;
+class Database
+{
+    static private $db;
 
-class Database{
+    private function __construct()
+    {
 
-protected  $db;
-private function __construct(){
-
-
-
-}
-
-public  static function getInstance(){
-
-    if(self::$db){
-        return self::$db;
-    }else{
-
-        self::$db = new self();
-
-        return self::$db;
     }
 
-}
+    static function getInstance()
+    {
+        if (empty(self::$db)) {
+            self::$db = new self;
+            return self::$db;
+        } else {
+            return self::$db;
+        }
+    }
 
+    function where($where)
+    {
+        return $this;
+    }
+
+    function order($order)
+    {
+        return $this;
+    }
+
+    function limit($limit)
+    {
+        return $this;
+    }
+
+    function query($sql)
+    {
+        echo "SQL: $sql\n";
+    }
 }
