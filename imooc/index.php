@@ -106,7 +106,7 @@ spl_autoload_register('IMooc\Loader::autoload');
 //var_dump($db);
 
 $abstrct02 = new abstrct02();
-$abstrct02->test();
+$abstrct02->abstract_func2();
 
 
 
